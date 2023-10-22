@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+.primary-color{
+  background-color: rgb(223, 208, 237);
+}
+.graditent-purple{
+  background: linear-gradient(90deg,rgb(97, 25, 168),rgb(157, 113, 203));
+  box-shadow: 0 4px 8px 0 rgba(97, 25, 168, 0.2), 0 6px 20px 0 rgba(97, 25, 168, 0.19);
+}
+.custom-width{
+  width: 1px;
+  background-color: rgb(192, 171, 212);
+}
+.custom-letter-spacing{
+  letter-spacing: 1.5px;
+}
+.bg-banner{
+  width: 100%;
+  padding-top: 48%;
+  background-image: url('./assets/banner.png');
+  background-size: cover;
+  background-position: center;
+  transform: translateY(-9px);
+}
+.banner-text {
+  position: absolute; /* Position the text absolutely within the container */
+  top: 28%; /* Adjust top position as needed */
+  left: 10%; /* Adjust left position as needed */
+  color: black; /* Text color */
+  padding: 10px; /* Add padding to the text */
+  border-radius: 5px; /* Add rounded corners to the text background */
+}
+.banner-text>h1{
+  font-size: 4.8vw;
+  line-height: 1.2;
+  text-align:justify ;
+  font-weight: 900;
+}
+.banner-text>h2{
+  line-height: 1.2;
+  font-size: 3.8vw;
+  text-align: justify;
+  font-weight: 900;
+}
+.banner-text>h3{
+  width: 30.8vw;
+  font-size: 1.9vw;
+  text-align: justify;
+}
+.color-secondary{
+  color: rgb(231, 73, 195);
+
+}
+.custom-shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.service-list{
+  list-style-type: disc;
+  margin: 1rem;
+  margin-left: 2.4rem;
+  font-size: 12.5px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+li::marker{
+  color: rgb(97, 25, 168);
+  font-size: 20px;
+}
+.custom-plan-width{
+  width: 600px;
+  font-weight: 600;
+}
+.contact-form-postion{
+  transform: translateY(250px);
+  background-color: white;
+}
+.bg-footer{
+  background-image: url('./assets/footer-bg.png');
+  width: 100%;
+  aspect-ratio: 2/1;
+  background-size: cover;
+}
+
+
+@media (max-width: 1023px) {
+ 
+  .custom-letter-spacing{
+    letter-spacing: 0.5px;
+  }
+}
